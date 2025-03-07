@@ -1,0 +1,7 @@
+sudo: required
+service:
+  _ docker
+
+script:
+  - docker build -t testeci .
+  - docker images testeci
